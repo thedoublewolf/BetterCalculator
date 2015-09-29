@@ -1,0 +1,20 @@
+.container {
+	max-width: 400px;
+	margin: 0 auto;
+	text-align: center;
+	border: 1px solid black;
+}
+
+button {
+	width: 90px;
+	height: 90px;
+	display: inline-block;
+	border: 1px solid black;
+}
+
+span {
+	width: 270px;
+	height: 90px;
+	border: 1px solid black;
+	display: inline-block;
+}
