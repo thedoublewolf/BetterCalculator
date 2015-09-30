@@ -19,60 +19,102 @@ var equal = document.querySelector('#equal');
 var plus = document.querySelector('#plus');
 
 //Variable Declarations
-var inputText;
+var inputText, calculate;
 
-//Function for number inputs
+//Function for clear
+function inputClear() {
+	inputText = null;
+	answer.textContent = null;
+};
+
+//Functions for operations
+function inputDivide() {
+	inputText = divide.value;
+	answer.textContent = answer.textContent + inputText;
+};
+
+function inputMultiply() {
+	inputText = multiply.value;
+	answer.textContent = answer.textContent + inputText;
+};
+
+function inputSubtract() {
+	inputText = subtract.value;
+	answer.textContent = answer.textContent + inputText;
+};
+
+function inputPlus() {
+	inputText = plus.value;
+	answer.textContent = answer.textContent + inputText;
+};
+
+function inputEqual() {
+	calculate = Number(inputText);
+	answer.textContent = calculate;
+}
+
+//Functions for number inputs
 function input1() {
 	inputText = one.value;
-	answer.textContent = inputText;
+	answer.textContent = answer.textContent + inputText;
 };
 
 function input2() {
 	inputText = two.value;
-	answer.textContent = inputText;
+	answer.textContent = answer.textContent + inputText;
 };
 
 function input3() {
 	inputText = three.value;
-	answer.textContent = inputText;
+	answer.textContent = answer.textContent + inputText;
 };
 
 function input4() {
 	inputText = four.value;
-	answer.textContent = inputText;
+	answer.textContent = answer.textContent + inputText;
 };
 
 function input5() {
 	inputText = five.value;
-	answer.textContent = inputText;
+	answer.textContent = answer.textContent + inputText;
 };
 
 function input6() {
 	inputText = six.value;
-	answer.textContent = inputText;
+	answer.textContent = answer.textContent + inputText;
 };
 
 function input7() {
 	inputText = seven.value;
-	answer.textContent = inputText;
+	answer.textContent = answer.textContent + inputText;
 };
 
 function input8() {
 	inputText = eight.value;
-	answer.textContent = inputText;
+	answer.textContent = answer.textContent + inputText;
 };
 
 function input9() {
 	inputText = nine.value;
-	answer.textContent = inputText;
+	answer.textContent = answer.textContent + inputText;
 };
 
 function input0() {
 	inputText = zero.value;
-	answer.textContent = inputText;
+	answer.textContent = answer.textContent + inputText;
 };
 
-//Button Click
+//Button Click for clear
+clear.addEventListener('click', inputClear);
+
+//Button Click for operations
+divide.addEventListener('click', inputDivide);
+multiply.addEventListener('click', inputMultiply);
+subtract.addEventListener('click', inputSubtract);
+plus.addEventListener('click', inputPlus);
+equal.addEventListener('click', inputEqual);
+
+//Button Click for number inputs
 one.addEventListener('click', input1);
 two.addEventListener('click', input2);
 three.addEventListener('click', input3);
