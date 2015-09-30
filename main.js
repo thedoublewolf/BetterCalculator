@@ -48,10 +48,16 @@ function inputPlus() {
 	answer.textContent = answer.textContent + inputText;
 };
 
+// function inputDecimal() {
+// 	iputText = decimal.value;
+// 	answer.textContent = answer.textContent + inputText;
+// }; THIS DOESN'T WORK YET
+
 function inputEqual() {
-	calculate = Number(inputText);
+	calculate = inputText;
 	answer.textContent = calculate;
-}
+	console.log(inputEqual);
+};
 
 //Functions for number inputs
 function input1() {
@@ -112,6 +118,7 @@ divide.addEventListener('click', inputDivide);
 multiply.addEventListener('click', inputMultiply);
 subtract.addEventListener('click', inputSubtract);
 plus.addEventListener('click', inputPlus);
+// decimal.addEventListener('click', inputDecimal); THIS DOESN'T WORK YET
 equal.addEventListener('click', inputEqual);
 
 //Button Click for number inputs
